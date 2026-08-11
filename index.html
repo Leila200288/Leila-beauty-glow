@@ -1,251 +1,234 @@
+```html
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Leila Beauty Glow</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leila Beauty Glow ✨</title>
 
-<style>
-* {
-    box-sizing: border-box;
-}
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #fff8fa;
-    color: #33272b;
-}
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff7fa;
+      color: #3d2933;
+    }
 
-header {
-    background: white;
-    padding: 22px 7%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #f0dfe4;
-}
+    header {
+      background: linear-gradient(135deg, #f7c9d9, #fff0f5);
+      text-align: center;
+      padding: 55px 20px;
+    }
 
-.logo {
-    font-family: Georgia, serif;
-    font-size: 26px;
-    font-weight: bold;
-}
+    header h1 {
+      margin: 0;
+      font-size: 42px;
+      color: #9b4f6d;
+    }
 
-.logo span {
-    color: #b7657b;
-}
+    header p {
+      font-size: 18px;
+    }
 
-nav a {
-    margin-left: 25px;
-    text-decoration: none;
-    color: #33272b;
-}
-
-.hero {
-    padding: 90px 7%;
-    text-align: center;
-    background: linear-gradient(135deg, #f8e2e8, #fff);
-}
-
-.hero h1 {
-    font-family: Georgia, serif;
-    font-size: 58px;
-    margin: 0 0 20px;
-}
-
-.hero p {
-    max-width: 650px;
-    margin: auto;
-    font-size: 19px;
-    color: #6f6267;
-}
-
-.button {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 14px 28px;
-    background: #33272b;
-    color: white;
-    text-decoration: none;
-    border-radius: 30px;
-}
-
-section {
-    padding: 70px 7%;
-}
-
-h2 {
-    font-family: Georgia, serif;
-    font-size: 38px;
-    text-align: center;
-}
-
-.categories {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    max-width: 1100px;
-    margin: 40px auto;
-}
-
-.card {
-    background: white;
-    padding: 30px;
-    border-radius: 20px;
-    text-align: center;
-    border: 1px solid #f0dfe4;
-}
-
-.card .icon {
-    font-size: 40px;
-}
-
-.card h3 {
-    font-family: Georgia, serif;
-    font-size: 23px;
-}
-
-.card p {
-    color: #75686d;
-}
-
-.about {
-    background: #33272b;
-    color: white;
-    text-align: center;
-}
-
-.about p {
-    max-width: 700px;
-    margin: auto;
-    color: #eadfe2;
-}
-
-footer {
-    background: white;
-    padding: 30px;
-    text-align: center;
-    color: #766a6e;
-}
-
-@media (max-width: 800px) {
     nav {
-        display: none;
+      text-align: center;
+      padding: 15px;
+      background: white;
     }
 
-    .hero h1 {
-        font-size: 42px;
+    nav a {
+      color: #9b4f6d;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
     }
 
-    .categories {
-        grid-template-columns: 1fr 1fr;
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
-}
 
-@media (max-width: 500px) {
-    .categories {
+    .intro {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .intro h2 {
+      color: #9b4f6d;
+      font-size: 30px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 22px;
+      padding: 30px;
+      box-shadow: 0 8px 30px rgba(120, 60, 80, 0.12);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+      align-items: center;
+    }
+
+    .product-image {
+      background: #fff0f4;
+      border-radius: 18px;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .product-image img {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 15px;
+    }
+
+    .product h3 {
+      font-size: 30px;
+      color: #9b4f6d;
+      margin-top: 0;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #f5d0df;
+      color: #8b405e;
+      padding: 7px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .notes {
+      line-height: 1.8;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 25px;
+      background: #b85f80;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    .disclaimer {
+      margin-top: 25px;
+      font-size: 12px;
+      color: #777;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 30px;
+      text-align: center;
+      background: #f8dce6;
+      color: #704354;
+      text-align: center;
+    }
+
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 32px;
+      }
+
+      .product {
         grid-template-columns: 1fr;
+      }
     }
-}
-</style>
+  </style>
 </head>
 
 <body>
 
-<header>
-    <div class="logo">
-        Leila <span>Beauty Glow</span>
-    </div>
+  <header>
+    <h1>Leila Beauty Glow ✨</h1>
+    <p>Beauty, Trends & Produkte, die wir lieben</p>
+  </header>
 
-    <nav>
-        <a href="#skincare">Skincare</a>
-        <a href="#makeup">Make-up</a>
-        <a href="#haare">Haarpflege</a>
-        <a href="#parfum">Parfum</a>
-    </nav>
-</header>
+  <nav>
+    <a href="#">Startseite</a>
+    <a href="#beauty-pick">Beauty Pick</a>
+    <a href="#ueber-uns">Über uns</a>
+  </nav>
 
-<div class="hero">
+  <main class="container">
 
-    <h1>Leila Beauty Glow</h1>
+    <section class="intro">
+      <h2>✨ Leilas Beauty Pick</h2>
+      <p>
+        Wir entdecken Beauty-Produkte, die auf Social Media für Aufsehen sorgen,
+        und schauen sie uns genauer an.
+      </p>
+    </section>
 
-    <p>
-        Beauty entdecken. Besser entscheiden.
-        Entdecke Beauty-Produkte, Tipps, Vergleiche
-        und Empfehlungen rund um deine Beauty-Routine.
-    </p>
+    <section class="product" id="beauty-pick">
 
-    <a class="button" href="#kategorien">
-        Beauty entdecken
-    </a>
+      <div class="product-image">
+        <img
+          src="https://soldejaneiro.com/cdn/shop/files/62-Mist-240ml.png"
+          alt="Sol de Janeiro Cheirosa 62 Perfume Mist"
+        >
+      </div>
 
-</div>
+      <div>
+        <span class="badge">SOCIAL-MEDIA-FAVORIT</span>
 
-<section id="kategorien">
+        <h3>Sol de Janeiro Cheirosa 62™</h3>
 
-    <h2>Unsere Beauty-Welt</h2>
+        <p>
+          Ein beliebter Duft von Sol de Janeiro mit einem warmen,
+          süßen Duftprofil.
+        </p>
 
-    <div class="categories">
+        <p class="notes">
+          🌸 <strong>Duftnoten:</strong><br>
+          Pistazie · gesalzenes Karamell · Vanille · Jasmin · Sandelholz
+        </p>
 
-        <div class="card" id="skincare">
-            <div class="icon">🧴</div>
-            <h3>Skincare</h3>
-            <p>
-                Pflegeprodukte, Routinen und
-                hilfreiche Beauty-Tipps.
-            </p>
-        </div>
+        <p>
+          Der Cheirosa 62™ Perfume Mist gehört zu den bekanntesten Produkten
+          der Marke.
+        </p>
 
-        <div class="card" id="makeup">
-            <div class="icon">💄</div>
-            <h3>Make-up</h3>
-            <p>
-                Produkte, Trends und
-                Empfehlungen.
-            </p>
-        </div>
+        <a
+          class="button"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Produkt ansehen →
+        </a>
 
-        <div class="card" id="haare">
-            <div class="icon">💇</div>
-            <h3>Haarpflege</h3>
-            <p>
-                Shampoo, Styling und
-                Pflege für schönes Haar.
-            </p>
-        </div>
+        <p class="disclaimer">
+          Hinweis: Der Link wird später durch unseren persönlichen
+          Affiliate-Link ersetzt.
+        </p>
+      </div>
 
-        <div class="card" id="parfum">
-            <div class="icon">🌸</div>
-            <h3>Parfum</h3>
-            <p>
-                Düfte entdecken und
-                miteinander vergleichen.
-            </p>
-        </div>
+    </section>
 
-    </div>
+    <section id="ueber-uns" style="text-align:center; margin-top:50px;">
+      <h2>Über Leila Beauty Glow 🌸</h2>
+      <p>
+        Willkommen bei Leila Beauty Glow!
+        Hier findest du Beauty-Favoriten, Trends und interessante Produkte,
+        die wir für dich entdecken.
+      </p>
+    </section>
 
-</section>
+  </main>
 
-<section class="about">
-
-    <h2>Willkommen bei Leila Beauty Glow</h2>
-
-    <p>
-        Beauty muss nicht kompliziert sein.
-        Wir möchten dir helfen, interessante Produkte
-        zu entdecken und bessere Kaufentscheidungen
-        zu treffen.
-    </p>
-
-</section>
-
-<footer>
-
-    © 2026 Leila Beauty Glow
-
-</footer>
+  <footer>
+    © 2026 Leila Beauty Glow · Beauty & Trends ✨
+  </footer>
 
 </body>
 </html>
+```
