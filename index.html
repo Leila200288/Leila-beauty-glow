@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leila Beauty Glow</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff8fa;
+    color: #33272b;
+}
+
+header {
+    background: white;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f0dfe4;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #b7657b;
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #33272b;
+}
+
+.hero {
+    padding: 90px 7%;
+    text-align: center;
+    background: linear-gradient(135deg, #f8e2e8, #fff);
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: 58px;
+    margin: 0 0 20px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: auto;
+    font-size: 19px;
+    color: #6f6267;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 28px;
+    background: #33272b;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+section {
+    padding: 70px 7%;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    text-align: center;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #f0dfe4;
+}
+
+.card .icon {
+    font-size: 40px;
+}
+
+.card h3 {
+    font-family: Georgia, serif;
+    font-size: 23px;
+}
+
+.card p {
+    color: #75686d;
+}
+
+.about {
+    background: #33272b;
+    color: white;
+    text-align: center;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    color: #eadfe2;
+}
+
+footer {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    color: #766a6e;
+}
+
+@media (max-width: 800px) {
+    nav {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .categories {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .categories {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        Leila <span>Beauty Glow</span>
+    </div>
+
+    <nav>
+        <a href="#skincare">Skincare</a>
+        <a href="#makeup">Make-up</a>
+        <a href="#haare">Haarpflege</a>
+        <a href="#parfum">Parfum</a>
+    </nav>
+</header>
+
+<div class="hero">
+
+    <h1>Leila Beauty Glow</h1>
+
+    <p>
+        Beauty entdecken. Besser entscheiden.
+        Entdecke Beauty-Produkte, Tipps, Vergleiche
+        und Empfehlungen rund um deine Beauty-Routine.
+    </p>
+
+    <a class="button" href="#kategorien">
+        Beauty entdecken
+    </a>
+
+</div>
+
+<section id="kategorien">
+
+    <h2>Unsere Beauty-Welt</h2>
+
+    <div class="categories">
+
+        <div class="card" id="skincare">
+            <div class="icon">🧴</div>
+            <h3>Skincare</h3>
+            <p>
+                Pflegeprodukte, Routinen und
+                hilfreiche Beauty-Tipps.
+            </p>
+        </div>
+
+        <div class="card" id="makeup">
+            <div class="icon">💄</div>
+            <h3>Make-up</h3>
+            <p>
+                Produkte, Trends und
+                Empfehlungen.
+            </p>
+        </div>
+
+        <div class="card" id="haare">
+            <div class="icon">💇</div>
+            <h3>Haarpflege</h3>
+            <p>
+                Shampoo, Styling und
+                Pflege für schönes Haar.
+            </p>
+        </div>
+
+        <div class="card" id="parfum">
+            <div class="icon">🌸</div>
+            <h3>Parfum</h3>
+            <p>
+                Düfte entdecken und
+                miteinander vergleichen.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="about">
+
+    <h2>Willkommen bei Leila Beauty Glow</h2>
+
+    <p>
+        Beauty muss nicht kompliziert sein.
+        Wir möchten dir helfen, interessante Produkte
+        zu entdecken und bessere Kaufentscheidungen
+        zu treffen.
+    </p>
+
+</section>
+
+<footer>
+
+    © 2026 Leila Beauty Glow
+
+</footer>
+
+</body>
+</html>
