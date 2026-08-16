@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -7,146 +6,29 @@
   <title>Leila Beauty Glow ✨</title>
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #fff7fa;
-      color: #3d2933;
-    }
-
-    header {
-      background: linear-gradient(135deg, #f7c9d9, #fff0f5);
-      text-align: center;
-      padding: 55px 20px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 42px;
-      color: #9b4f6d;
-    }
-
-    header p {
-      font-size: 18px;
-    }
-
-    nav {
-      text-align: center;
-      padding: 15px;
-      background: white;
-    }
-
-    nav a {
-      color: #9b4f6d;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    .intro {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    .intro h2 {
-      color: #9b4f6d;
-      font-size: 30px;
-    }
-
-    .product {
-      background: white;
-      border-radius: 22px;
-      padding: 30px;
-      box-shadow: 0 8px 30px rgba(120, 60, 80, 0.12);
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 35px;
-      align-items: center;
-    }
-
-    .product-image {
-      background: #fff0f4;
-      border-radius: 18px;
-      padding: 30px;
-      text-align: center;
-    }
-
-    .product-image img {
-      width: 100%;
-      max-width: 350px;
-      border-radius: 15px;
-    }
-
-    .product h3 {
-      font-size: 30px;
-      color: #9b4f6d;
-      margin-top: 0;
-    }
-
-    .badge {
-      display: inline-block;
-      background: #f5d0df;
-      color: #8b405e;
-      padding: 7px 14px;
-      border-radius: 20px;
-      font-size: 13px;
-      font-weight: bold;
-    }
-
-    .notes {
-      line-height: 1.8;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 14px 25px;
-      background: #b85f80;
-      color: white;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: bold;
-    }
-
-    .disclaimer {
-      margin-top: 25px;
-      font-size: 12px;
-      color: #777;
-    }
-
-    footer {
-      margin-top: 60px;
-      padding: 30px;
-      text-align: center;
-      background: #f8dce6;
-      color: #704354;
-      text-align: center;
-    }
-
-    @media (max-width: 700px) {
-      header h1 {
-        font-size: 32px;
-      }
-
-      .product {
-        grid-template-columns: 1fr;
-      }
-    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; background: #fff7fa; color: #3d2933; }
+    header { background: linear-gradient(135deg, #f7c9d9, #fff0f5); text-align: center; padding: 55px 20px; }
+    header h1 { margin: 0; font-size: 42px; color: #9b4f6d; }
+    header p { font-size: 18px; }
+    nav { text-align: center; padding: 15px; background: white; }
+    nav a { color: #9b4f6d; text-decoration: none; margin: 0 15px; font-weight: bold; }
+    .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+    .intro { text-align: center; margin-bottom: 40px; }
+    .intro h2 { color: #9b4f6d; font-size: 30px; }
+    .product { background: white; border-radius: 22px; padding: 30px; box-shadow: 0 8px 30px rgba(120, 60, 80, 0.12); display: grid; grid-template-columns: 1fr 1fr; gap: 35px; align-items: center; }
+    .product-image { background: #fff0f4; border-radius: 18px; padding: 30px; text-align: center; }
+    .product-image img { width: 100%; max-width: 350px; border-radius: 15px; }
+    .product h3 { font-size: 30px; color: #9b4f6d; margin-top: 0; }
+    .badge { display: inline-block; background: #f5d0df; color: #8b405e; padding: 7px 14px; border-radius: 20px; font-size: 13px; font-weight: bold; }
+    .notes { line-height: 1.8; }
+    .button { display: inline-block; margin-top: 20px; padding: 14px 25px; background: #b85f80; color: white; text-decoration: none; border-radius: 30px; font-weight: bold; }
+    .disclaimer { margin-top: 25px; font-size: 12px; color: #777; }
+    footer { margin-top: 60px; padding: 30px; text-align: center; background: #f8dce6; color: #704354; }
+    @media (max-width: 700px) { header h1 { font-size: 32px; } .product { grid-template-columns: 1fr; } }
   </style>
 </head>
-
 <body>
-
   <header>
     <h1>Leila Beauty Glow ✨</h1>
     <p>Beauty, Trends & Produkte, die wir lieben</p>
@@ -155,82 +37,51 @@
   <nav>
     <a href="#">Startseite</a>
     <a href="#beauty-pick">Beauty Pick</a>
+    <a href="#haarpflege">Haarpflege</a>
     <a href="#ueber-uns">Über uns</a>
   </nav>
 
   <main class="container">
-
-    <section class="intro">
+    <section class="intro" id="beauty-pick">
       <h2>✨ Leilas Beauty Pick</h2>
-      <p>
-        Wir entdecken Beauty-Produkte, die auf Social Media für Aufsehen sorgen,
-        und schauen sie uns genauer an.
-      </p>
+      <p>Wir entdecken Beauty-Produkte, die auf Social Media für Aufsehen sorgen, und schauen sie uns genauer an.</p>
     </section>
 
-
     <section style="margin-top:40px;">
+      <h2 style="text-align:center; color:#9b4f6d;">🌸 Unsere Beauty-Kategorien</h2>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:20px; margin-top:30px;">
+        <div style="background:white; padding:25px; border-radius:20px; text-align:center; box-shadow:0 6px 20px rgba(120,60,80,0.10);"><div style="font-size:40px;">🧴</div><h3>Gesichtspflege</h3><p>Pflege, Seren, Cremes und mehr für deine Haut.</p></div>
+        <div style="background:white; padding:25px; border-radius:20px; text-align:center; box-shadow:0 6px 20px rgba(120,60,80,0.10);"><div style="font-size:40px;">💇‍♀️</div><h3>Haarpflege</h3><p>Shampoos, Pflege, Styling und beliebte Haarprodukte.</p></div>
+        <div style="background:white; padding:25px; border-radius:20px; text-align:center; box-shadow:0 6px 20px rgba(120,60,80,0.10);"><div style="font-size:40px;">🧴</div><h3>Körperpflege</h3><p>Bodycare, Lotionen, Peelings und weitere Favoriten.</p></div>
+        <div style="background:white; padding:25px; border-radius:20px; text-align:center; box-shadow:0 6px 20px rgba(120,60,80,0.10);"><div style="font-size:40px;">🌸</div><h3>Düfte</h3><p>Beliebte Parfums, Bodysprays und Social-Media-Düfte.</p></div>
+        <div style="background:white; padding:25px; border-radius:20px; text-align:center; box-shadow:0 6px 20px rgba(120,60,80,0.10);"><div style="font-size:40px;">💄</div><h3>Make-up</h3><p>Beauty-Trends, Make-up-Favoriten und Neuheiten.</p></div>
+      </div>
+    </section>
 
-  <h2 style="text-align:center; color:#9b4f6d;">
-    🌸 Unsere Beauty-Kategorien
-  </h2>
-
-  <div style="
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
-    gap:20px;
-    margin-top:30px;
-  ">
-
-    <div style="background:white; padding:25px; border-radius:20px; text-align:center; box-shadow:0 6px 20px rgba(120,60,80,0.10);">
-      <div style="font-size:40px;">🧴</div>
-      <h3>Gesichtspflege</h3>
-      <p>Pflege, Seren, Cremes und mehr für deine Haut.</p>
-    </div>
-
-    <div style="background:white; padding:25px; border-radius:20px; text-align:center; box-shadow:0 6px 20px rgba(120,60,80,0.10);">
-      <div style="font-size:40px;">💇‍♀️</div>
-      <h3>Haarpflege</h3>
-      <p>Shampoos, Pflege, Styling und beliebte Haarprodukte.</p>
-    </div>
-
-    <div style="background:white; padding:25px; border-radius:20px; text-align:center; box-shadow:0 6px 20px rgba(120,60,80,0.10);">
-      <div style="font-size:40px;">🧴</div>
-      <h3>Körperpflege</h3>
-      <p>Bodycare, Lotionen, Peelings und weitere Favoriten.</p>
-    </div>
-
-    <div style="background:white; padding:25px; border-radius:20px; text-align:center; box-shadow:0 6px 20px rgba(120,60,80,0.10);">
-      <div style="font-size:40px;">🌸</div>
-      <h3>Düfte</h3>
-      <p>Beliebte Parfums, Bodysprays und Social-Media-Düfte.</p>
-    </div>
-
-    <div style="background:white; padding:25px; border-radius:20px; text-align:center; box-shadow:0 6px 20px rgba(120,60,80,0.10);">
-      <div style="font-size:40px;">💄</div>
-      <h3>Make-up</h3>
-      <p>Beauty-Trends, Make-up-Favoriten und Neuheiten.</p>
-    </div>
-
-  </div>
-
-</section>
+    <section id="haarpflege" style="margin-top:55px;">
+      <h2 style="text-align:center; color:#9b4f6d;">💇‍♀️ Haarpflege – unser Beauty-Favorit</h2>
+      <div class="product" style="margin-top:30px;">
+        <div class="product-image">
+          <img src="olaplex-no3.png.png" alt="OLAPLEX Nº.3 Hair Perfector">
+        </div>
+        <div>
+          <span class="badge">⭐ BELIEBT & SOCIAL-MEDIA-FAVORIT</span>
+          <h3>OLAPLEX Nº.3 Hair Perfector</h3>
+          <p class="notes">Ein bekannter Haarpflege-Favorit für geschädigtes und strapaziertes Haar. OLAPLEX beschreibt Nº.3 als Pre-Shampoo-Behandlung zur Stärkung und Reparatur und empfiehlt mindestens 10 Minuten Einwirkzeit vor dem Ausspülen. citeturn0search1</p>
+          <p><strong>Warum wir ihn ausgewählt haben:</strong> Ein etablierter Beauty-Klassiker, der sehr gut zu unserer Haarpflege-Kategorie passt.</p>
+          <!-- DEIN PERSÖNLICHER AFFILIATE-LINK KOMMT HIER HINEIN. Noch keinen Affiliate-Link erfinden. -->
+          <a class="button" href="https://olaplex.de/collections/haarpflegeprodukte/products/original-olaplex-n-3plus-complete-repair-treatment" target="_blank" rel="nofollow sponsored noopener">Produkt ansehen ✨</a>
+          <p class="disclaimer">Hinweis: Dieser Link ist aktuell der offizielle Produktlink und noch kein persönlicher Affiliate-Link. Sobald dein Affiliate-Link vorliegt, wird nur die Zieladresse des Buttons ersetzt.</p>
+        </div>
+      </div>
+    </section>
 
     <section id="ueber-uns" style="text-align:center; margin-top:50px;">
       <h2>Über Leila Beauty Glow 🌸</h2>
-      <p>
-        Willkommen bei Leila Beauty Glow!
-        Hier findest du Beauty-Favoriten, Trends und interessante Produkte,
-        die wir für dich entdecken.
-      </p>
+      <p>Willkommen bei Leila Beauty Glow! Hier findest du Beauty-Favoriten, Trends und interessante Produkte, die wir für dich entdecken.</p>
     </section>
-
   </main>
 
-  <footer>
-    © 2026 Leila Beauty Glow · Beauty & Trends ✨
-  </footer>
-
+  <footer>© 2026 Leila Beauty Glow · Beauty & Trends ✨</footer>
 </body>
 </html>
-```
